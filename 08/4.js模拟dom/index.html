@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="app">
+    <h1 class="title">教育</h1>
+    <nav class="list">
+      <li class="item" style="font-weight: bolder; color: red;">HTML5</li>
+      <li class="item">UI</li>
+      <li class="item">unity</li>
+    </nav>
+  </div>
+
+
+  <script>
+    var dom = {
+      el: 'div',
+      props: {
+        id: 'app'
+      },
+      children: [
+        {
+          tag: 'h1',
+          props: {
+            className: 'title'
+          },
+          children: 'hellowold'
+        },
+        {
+          tag: 'nav',
+          props: {
+            className: 'list',
+            children: [
+              {
+                tag: 'li',
+                props: {
+                  className: 'item',
+                  style: 'font-weight: bolder; color: red;'
+                },
+                children: 'HTML5'
+              },
+              {
+                tag: 'li',
+                props: {
+                  className: 'item',
+                },
+                children: 'UI'
+              },
+              {
+                tag: 'li',
+                props: {
+                  className: 'item',
+                },
+                children: 'unity'
+              }
+            ]
+          }
+        }
+      ]
+    };
+  </script>
+
+
+  
+</body>
+</html>
